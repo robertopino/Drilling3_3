@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo 3 - Drilling 3</title>
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- FONT AWESOME KIT -->
+    <script
+      src="https://kit.fontawesome.com/1872a23027.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="deco-circle" aria-hidden="true"></div>
+        <h1>Todos nuestros productos</h1>
+      </header>
+      <section class="discount">
+        <p><span class="percent">50%</span> <span class="label">off</span></p>
+      </section>
+      <section class="info">
+        <div class="arrow"></div>
+        <p>
+          <b>¡Aprovecha esta oferta mientras puedas!</b> Para poder obtener un
+          código de descuento debes aceptar nuestros términos y condiciones.
+        </p>
+
+        <div>
+          <input type="checkbox" name="terminos" id="terminos" />
+          <label for="terminos"
+            ><a href="#" class="terms">Términos y condiciones</a></label
+          >
+        </div>
+      </section>
+      <section class="discount-code">
+        <button id="codeBtn">Obtener código de descuento</button>
+        <p class="code" id="code"></p>
+      </section>
+
+      <footer></footer>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

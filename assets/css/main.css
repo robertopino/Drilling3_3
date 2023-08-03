@@ -1,0 +1,131 @@
+:root {
+  --green: #2ecb70;
+  --gold: #e6c61d;
+  --grey: #f0f0f0;
+  --darkgrey: #dedede;
+  --navy: #2c3d4f;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+    sans-serif;
+
+  background-color: white;
+  min-height: 100vh;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 20rem;
+  background-color: var(--grey);
+  border-radius: 1rem;
+  overflow: hidden;
+
+  box-shadow: 0 5px 10px 2px hsla(0, 0%, 0%, 0.1);
+}
+
+main > header {
+  padding: 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+main > footer {
+  border-bottom: solid 2rem var(--grey);
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.deco-circle {
+  background-color: var(--darkgrey);
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+}
+
+.discount {
+  background-color: var(--green);
+  color: var(--gold);
+  padding: 1.5rem 3rem;
+}
+
+.discount p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.discount > p > :first-child {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.discount > p > :last-child {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem 1rem;
+  font-size: 0.9rem;
+}
+
+.arrow {
+  content: "";
+  background-color: var(--green);
+  width: 2rem;
+  height: 2rem;
+  rotate: 45deg;
+  margin-left: 4rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.terms {
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.discount-code {
+  height: 5.5rem;
+  padding: 1rem;
+  background-color: var(--navy);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.discount-code button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: unset;
+  background-color: unset;
+  color: var(--green);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.code {
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+}
